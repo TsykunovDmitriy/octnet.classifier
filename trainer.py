@@ -64,6 +64,8 @@ class Trainer:
                 self.logger(**{"LossMean/train": loss_mean, "Accuracy/train": accuracy, "Log iter": self.log_iter})
                 self.log_iter += 1
                 loss_sum = 0.0
+                total = 0.0
+                correct = 0.0
 
         self.epoch += 1
 
